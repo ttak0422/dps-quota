@@ -3,4 +3,4 @@ if exists('g:loaded_dps_quota')
 endif
 let g:loaded_dps_quota = 1
 
-command! -nargs=0 Quota call denops#notify('dps-quota', 'Quota', [])
+command! -nargs=? Quota call denops#notify('dps-quota', 'Quota', [<f-args>])

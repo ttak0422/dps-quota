@@ -1,13 +1,11 @@
+import { QuotaError } from "../../quota.ts";
+
 export interface AppServerOptions {
   binary: string;
   timeoutMs: number;
 }
 
 export type RateLimitsResponse = Record<string, unknown>;
-
-export class QuotaError extends Error {
-  override name = "QuotaError";
-}
 
 interface AppServerChild {
   stdin: WritableStream<Uint8Array>;

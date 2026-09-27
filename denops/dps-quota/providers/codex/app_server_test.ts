@@ -1,9 +1,9 @@
 import {
   type AppServerOptions,
-  QuotaError,
   type RateLimitsResponse,
   readRateLimits,
-} from "./codex_app_server.ts";
+} from "./app_server.ts";
+import { QuotaError } from "../../quota.ts";
 
 const encoder = new TextEncoder();
 const options: AppServerOptions = { binary: "codex", timeoutMs: 1_000 };
