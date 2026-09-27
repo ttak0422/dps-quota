@@ -5,7 +5,7 @@
   },
   "tasks": {
     "fmt": "deno fmt --check",
-    "check": "deno check denops/dps-quota/main.ts denops/dps-quota/dispatcher.ts denops/dps-quota/quota.ts denops/dps-quota/formatter.ts denops/dps-quota/providers/codex/provider.ts denops/dps-quota/providers/codex/app_server.ts denops/dps-quota/dispatcher_test.ts denops/dps-quota/providers/codex/provider_test.ts denops/dps-quota/providers/codex/app_server_test.ts",
+    "check": "deno check denops/dps-quota/main.ts denops/dps-quota/dispatcher.ts denops/dps-quota/quota.ts denops/dps-quota/formatter.ts denops/dps-quota/providers/codex/provider.ts denops/dps-quota/providers/codex/app_server.ts denops/dps-quota/providers/claude/provider.ts denops/dps-quota/providers/claude/credentials.ts denops/dps-quota/dispatcher_test.ts denops/dps-quota/providers/codex/provider_test.ts denops/dps-quota/providers/codex/app_server_test.ts denops/dps-quota/providers/claude/provider_test.ts denops/dps-quota/providers/claude/credentials_test.ts",
     "lint": "deno lint",
     "test": "deno test",
     "test:editor": "nvim --headless -u NONE -S test/editor/quota_command_test.vim"
