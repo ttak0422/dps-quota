@@ -1,0 +1,12 @@
+{
+  "lock": false,
+  "compilerOptions": {
+    "strict": true
+  },
+  "tasks": {
+    "fmt": "deno fmt --check",
+    "check": "deno check denops/dps-quota/main.ts denops/dps-quota/dispatcher.ts denops/dps-quota/codex_app_server.ts denops/dps-quota/dispatcher_test.ts denops/dps-quota/codex_app_server_test.ts",
+    "lint": "deno lint",
+    "test": "deno test"
+  }
+}
